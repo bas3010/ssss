@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>
+      Pembelian Tiket Pesawat
+    </title>
+    <style>
+      form{line-height:2em} label, select,input{ margin-left: 5px; width: 120px; display: block; float: left; line-height: 15px } </style>
+  </head>
+  <body>
+    <script type='text/javascript'>
+     </script>
+    <h1>
+      Form Pembelian Tiket Pesawat
+    </h1>
+    <form name="form">
+      <label>
+        Nama Pemesan
+      </label>
+      <input type="text" name="input_nama" size=10>
+      <br> <form name="form">
+        <label>
+          Asal
+        </label>
+        <input type="text" name="input_nama" size=10>
+      <form name="form">
+        <label>
+          Password
+        </label>
+        <input type="text" name="input_nama" size=10>
+      <br/>
+     
+      <label>
+        Tujuan
+      </label>
+      <select name="input_tujuan" onchange="munculhargatiket()">
+        <option value="--Pilih--">
+          --Pilih--
+        </option>
+        <option value="Medan">
+          Medan
+        </option>
+        <option value="Bandung">
+          Bandung
+        </option>
+        <option value="prapat">
+          prapat
+        </option>
+      </select>
+      <label>
+        Harga
+      </label>
+      <input type="text" name="output_hargatujuan" size=10>
+      <br/>
+      <label>
+        Tipe Tiket
+      </label>
+      <select name="input_tipetiket" onchange="munculhargatipetiket()">
+        <option value="Amerika">
+          --Pilih--
+        </option>
+        <option value="VVIP">
+          VVIP
+        </option>
+        <option value="VIP">
+          VIP
+        </option>
+        <option value="Ekonomi">
+          Ekonomi
+        </option>
+      </select>
+      <label>
+        Biaya Tambahan
+      </label>
+      <input type="text" name="output_tambahanbiaya" size=10>
+      <br/>
+      <label>
+        Member?
+      </label>
+      <input type="checkbox" name="memberbukan" onchange="apakahmember()"/>
+      <label>
+        Diskon
+      </label>
+      <input type="text" name="output_diskon" size=10/>
+      <br/>
+      <label>
+        Jumlah Tiket
+      </label>
+      <input type="text" name="input_jumlahtiket" size=10>
+      
+      <br/>
+      <label>
+        Total Harga
+      </label>
+      <input type="text" name="output_totalharga" size=10>
+      
+      <br>
+        <label>Surat Vaksin: </label>
+        <input type="file" required style=" " />
+    </fieldset>
+    <BR>
+    <p abc=center>
+        <button>SUBMIT</button></p>
+    </form>
+  </body>
+</html>
